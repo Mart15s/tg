@@ -102,7 +102,7 @@ async def cancel(update: Update, context: ContextTypes.DEFAULT_TYPE):
 if __name__ == '__main__':
     try:
         logger.info("Starting Telegram bot...")
-        token = os.getenv("8083580384:AAEPTTOWBOTiZ9m1LD3P4uQeej10GQ2rYEI")
+        token = os.getenv("BOT_TOKEN")
         if not token:
             logger.error("TELEGRAM_BOT_TOKEN environment variable not found")
             raise ValueError("Bot token is required")
